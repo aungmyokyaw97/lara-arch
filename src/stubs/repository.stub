@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+use Amk\LaraArch\BaseRepository;
+
+class {{ class }} extends BaseRepository {
+
+    public function getModel(){
+        //return ;
+    }
+
+}

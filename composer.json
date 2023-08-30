@@ -1,0 +1,44 @@
+{
+    "name": "aungmyokyaw/lara-arch",
+    "description": "Laravel components",
+    "keywords": ["laravel","enum","service","trait","DTO","repository","laravel-cli"],
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Amk\\LaraArch\\": "src/"
+        },
+        "files": [
+            "src/Helpers/enum.php"
+        ]
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/console": "^8.0|^9.0|^10.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amk\\LaraArch\\Provider\\LaraArchServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Aung Myo Kyaw",
+            "email": "aungmyokyaw28637@gmail.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+           "Amk\\LaraArch\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.10",
+        "phpunit/phpunit": "^10.3"
+    }
+
+
+}
